@@ -1,4 +1,4 @@
-# Crowd-Analysis
+# ManagEdge
 
 The project is dedicated to apply on CCTV and other survailance system for simple crowd monitoring and crowd analysis. The system is able to monitor for abnormal crowd activity, social distance violation and restricted entry. The other part of the system can then process crowd movement data into optical flow, heatmap and energy graph.
 
@@ -28,14 +28,8 @@ YOLOv4-tiny is used for this documentation. You can use other YOLO variation for
 
 ### Files
 
-Clone this repo. Then, create a folder ```YOLOv4-tiny```, download and put in the weight and config file. The files can be found here, [yolov4-tiny.weights](https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v4_pre/yolov4-tiny.weights) and [yolov4-tiny.cfg](https://github.com/AlexeyAB/darknet/blob/master/cfg/yolov4-tiny.cfg). Or you can just run the scirpt below.
-
 ```shell
-git clone https://github.com/lewjiayi/Crowd-Analysis.git
-cd Crowd-Analysis
-mkdir YOLOv4-tiny
-wget -P YOLOv4-tiny https://github.com/AlexeyAB/darknet/releases/download/yolov4/yolov4-tiny.weights
-wget -P YOLOv4-tiny https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/yolov4-tiny.cfg
+git clone https://github.com/obernardoquinteiro/ManagEdge.git
 ```
 
 ### Requirements
@@ -43,7 +37,7 @@ wget -P YOLOv4-tiny https://raw.githubusercontent.com/AlexeyAB/darknet/master/cf
 Install the requirements
 
 ```shell
-pip3 install -r requirements2.txt
+pip3 install -r requirements.txt
 ```
 
 ## Configuration
@@ -53,14 +47,6 @@ pip3 install -r requirements2.txt
 Place the **video source** under `VIDEO_CONFIG.VIDEO_CAP` in `config.py`
 
 Refer to [User Manual](#user-manual) on how to use the `config.py` file.
-
-## Server-Node Combinations
-
-basicServer.py - allclient.py
-
-allscripttls.py - basicclienttls.py
-
-allscripttls_minusdetection.py - basicclienttls_plusdetection.py
 
 
 
